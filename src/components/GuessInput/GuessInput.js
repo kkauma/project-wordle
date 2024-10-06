@@ -6,6 +6,10 @@ function GuessInput() {
   function handleSubmit(event) {
     event.preventDefault();
 
+    if (guess.length !== 5) {
+      window.alert("Please enter exactly 5 characters. 💙");
+    }
+
     setGuess("");
   }
 
